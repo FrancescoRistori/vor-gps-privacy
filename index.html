@@ -60,23 +60,52 @@
     <li>calcoli di rotta, distanza, radiali e strumenti HSI/VOR;</li>
     <li><strong>registrazione del Flight Log</strong> (log di volo), se avviata dall'utente.</li>
 </ul>
+
+<h2>Posizione in background — Flight Log (registrazione traccia di volo)</h2>
 <p>
-    <strong>L'unica funzionalità che usa la posizione in background</strong> è il
-    <strong>Flight Log</strong>. Quando l'utente tocca Start, l'app
-    <strong>raccoglie dati di posizione anche quando l'app è chiusa o non in uso</strong>,
-    fino a un massimo di 4 ore per sessione o fino a interruzione manuale.
-    Durante la registrazione vengono campionati circa una volta al secondo: coordinate, quota,
-    velocità e rotta magnetica.
+    <strong>L'unica funzionalità che richiede la posizione in background</strong> è il
+    <strong>Flight Log</strong>: la registrazione continua della traccia GPS di un volo VFR,
+    avviata esplicitamente dall'utente con il pulsante <strong>Start</strong> nel menu Flight Log.
+</p>
+<p>
+    Il Flight Log è una <strong>funzionalità centrale di I-AV8 Fly</strong>. Consente di
+    documentare l'intero percorso di volo — decollo, rotta, virate, avvicinamenti e atterraggio —
+    per analisi post-volo, addestramento, debrief e revisione della navigazione sulla mappa.
+    Senza l'accesso alla posizione in background la traccia risulterebbe incompleta o interrotta
+    ogni volta che lo schermo si spegne, l'app passa in secondo piano o il pilota utilizza altre
+    app o strumenti durante il volo.
+</p>
+<p>
+    Durante un volo reale il telefono/tablet può restare bloccato, in tasca o montato in cabina
+    mentre la registrazione prosegue. Per questo motivo, dopo una <strong>informativa prominente
+    in-app</strong> e solo se l'utente accetta, l'app usa un <strong>servizio in primo piano</strong>
+    (con notifica persistente «Flight log — Recording…») per
+    <strong>raccogliere dati di posizione anche quando l'app è chiusa o non in uso</strong>,
+    fino a un massimo di <strong>4 ore</strong> per sessione o fino a interruzione manuale con
+    <strong>Stop</strong>.
+</p>
+<p>
+    Durante la registrazione vengono campionati circa <strong>una volta al secondo</strong>:
+    coordinate, quota, velocità e rotta magnetica. Al termine l'utente può salvare la traccia
+    come file <strong>GPX</strong>, visualizzarla sulla mappa, rinominarla, eliminarla o
+    condividerla volontariamente.
+</p>
+<p>
+    <strong>Il Flight Log non parte mai automaticamente</strong>: la registrazione in background
+    avviene solo su azione esplicita dell'utente e può essere interrotta in qualsiasi momento.
+    Nessun'altra funzione dell'app (mappa, HSI/VOR, simulatore, download database) usa la posizione
+    in background.
 </p>
 <p>
     I dati di posizione del Flight Log sono <strong>memorizzati solo sul dispositivo</strong>
-    (file GPX nella memoria interna dell'app). L'utente può aprire, rinominare, eliminare o
-    condividere volontariamente un file GPX tramite le funzioni di sistema.
+    (file GPX nella memoria interna dell'app).
     <strong>Naxon Avionics</strong> non riceve, vende né condivide automaticamente
     i dati di posizione con terze parti.
 </p>
 <p>
-    Puoi revocare i permessi di posizione in qualsiasi momento dalle impostazioni Android.
+    Puoi revocare i permessi di posizione in qualsiasi momento dalle impostazioni Android;
+    senza permesso di posizione in background non sarà possibile registrare un Flight Log completo
+    con l'app in secondo piano o lo schermo spento.
 </p>
 
 <h2>Altri dati trattati localmente</h2>
@@ -183,17 +212,47 @@
     <li>compute routes, distances, radials, and HSI/VOR tools;</li>
     <li><strong>record a Flight Log</strong>, when you start it.</li>
 </ul>
+
+<h2>Background location — Flight Log (flight track recording)</h2>
 <p>
-    <strong>The only feature that uses location in the background</strong> is
-    <strong>Flight Log recording</strong>. When the user taps Start, the app
-    <strong>collects location data even when the app is closed or not in use</strong>, for up to
-    4 hours per session or until the user stops recording. While recording, it samples
-    approximately once per second: coordinates, altitude, speed, and magnetic track.
+    <strong>The only feature that requires background location</strong> is
+    <strong>Flight Log</strong>: continuous GPS track recording during a VFR flight, started
+    explicitly by the user with the <strong>Start</strong> button in the Flight Log menu.
+</p>
+<p>
+    Flight Log is a <strong>core feature of I-AV8 Fly</strong>. It lets you document the full
+    flight path — takeoff, route, turns, approaches, and landing — for post-flight analysis,
+    training, debrief, and navigation review on the map. Without background location access the
+    track would be incomplete or interrupted whenever the screen turns off, the app moves to the
+    background, or the pilot uses other apps or instruments during the flight.
+</p>
+<p>
+    During a real flight the phone or tablet may stay locked, in a pocket, or mounted in the
+    cockpit while recording continues. For this reason, after an <strong>in-app prominent
+    disclosure</strong> and only if you accept, the app runs a <strong>foreground service</strong>
+    (with a persistent notification “Flight log — Recording…”) to
+    <strong>collect location data even when the app is closed or not in use</strong>, for up to
+    <strong>4 hours</strong> per session or until you tap <strong>Stop</strong>.
+</p>
+<p>
+    While recording, the app samples approximately <strong>once per second</strong>: coordinates,
+    altitude, speed, and magnetic track. When finished you can save the track as a
+    <strong>GPX</strong> file, view it on the map, rename it, delete it, or share it voluntarily.
+</p>
+<p>
+    <strong>Flight Log never starts automatically</strong>: background recording happens only
+    after an explicit user action and can be stopped at any time. No other app feature (map,
+    HSI/VOR, simulator, database download) uses background location.
 </p>
 <p>
     Flight Log location data is <strong>stored only on your device</strong> (GPX files).
     <strong>Naxon Avionics</strong> does not automatically receive, sell, or share location
     data with third parties.
+</p>
+<p>
+    You can revoke location permissions at any time in Android settings; without background
+    location permission you will not be able to record a complete Flight Log while the app is
+    in the background or the screen is off.
 </p>
 
 <h2>Other locally processed data</h2>
